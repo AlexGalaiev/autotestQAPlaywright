@@ -10,8 +10,7 @@ export class SuccessAccountCreationPopup {
     constructor(page: Page) {
         this.page = page;
         this.getSuccessPopupBody = page.locator('css=.popup-modal');
-        this.getSuccessPopupHeader = page.locator("xpath=//h2[contains(text(), 'Account created!')]")
-        this.clickContinueBtn = page.locator()
+        this.getSuccessPopupHeader = page.locator("xpath=//h2[contains(text(), 'Account created!')]");
     }
 
     async waitSuccessPopup(){
