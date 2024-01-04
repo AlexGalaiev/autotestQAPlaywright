@@ -21,9 +21,9 @@ test('Key Wey HIGH SCORE Full REgistration', async({ page }) => {
     await residencePage.fillResidenceAndCitizenshipSte();
     
     let changeCompanyPopup = new ChangeCompanyPopup(page);
-    changeCompanyPopup.proceedChangeCompanyPopup();
+    await changeCompanyPopup.proceedChangeCompanyPopup();
     
     let personalDetails = new PersonalDetails(page);
-    personalDetails.fillPersonalDetails();
+    await personalDetails.fillPersonalDetails();
 
 })

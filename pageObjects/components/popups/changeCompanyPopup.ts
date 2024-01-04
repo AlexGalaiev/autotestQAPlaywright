@@ -8,8 +8,8 @@ export class ChangeCompanyPopup {
 
     constructor(page: Page) {
         this.page = page;
-        this.popupBody = page.locator("xpath=//div[@id='popup_licence_change_body']");
-        this.continueRegistration = this.popupBody.locator("xpath=//span[@class='relative']");
+        this.popupBody = page.locator("css=#popup_licence_change_body");
+        this.continueRegistration = page.locator("css=#popup_licence_change_btn");
     }
 
     async proceedChangeCompanyPopup() {
