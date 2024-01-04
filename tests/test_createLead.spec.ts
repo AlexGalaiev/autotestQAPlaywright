@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
-import { SuccessAccountCreationPopup } from "../pageObjects/components/popups/successAccountCreationPopup";
-import { ShortRegistrationPage } from "../pageObjects/createAccount";
+import { SuccessAccountCreationPopup } from "../pageObjects/components/popups/successAccountCreationPopup.ts";
+import { ShortRegistrationPage } from "../pageObjects/createAccount.ts";
 import { ProjectLocalizationEN } from "../pageObjects/localization/localization_en.ts";
 
 

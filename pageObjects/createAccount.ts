@@ -1,5 +1,5 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { RandomUser } from "./components/UserCredentials";
+import { RandomUser } from "../pageObjects/components/userCredentials";
 
 
 
