@@ -23,7 +23,7 @@ export class ShortRegistrationPage {
     }
     
     async goto(){
-        await this.page.goto('https://staging-account.capex.com/en/register', {waitUntil:"load"})
+        await this.page.goto('https://development-account.capex.com/en/register', {waitUntil:"load"})
         expect(this.getUserEmail).toBeVisible;
     }
     
