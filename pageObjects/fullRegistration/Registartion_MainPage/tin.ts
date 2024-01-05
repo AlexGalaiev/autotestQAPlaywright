@@ -1,17 +1,21 @@
-import { Page, Locator } from "@playwright/test";
+import { Page, Locator, expect } from "@playwright/test";
 
-export class tinPage {
+export class TinPage {
     page: Page;
-    iDontHaveTin: Locator;
-    tinAbsentReason: Locator;
-    noTinAnswer: Locator;
+    primaryTin: Locator;
+    continueBtn: Locator;
+    tinPageHeader: Locator;
 
     constructor(page: Page){
         this.page = page;
-        this.iDontHaveTin = page.locator("css=#tinNumber");
-        this.tinAbsentReason = page.locator("xpath=//button[contains(@id, 'headlessui-menu-button-:rc:')]");
-        this.noTinAnswer = page.locator("xpath=//a[contains(@id, 'headlessui-menu-item-:rj:')]");
+        this.tinPageHeader = page.locator("xpath=//h1")
+        this.primaryTin = page.locator("css=#primaryTin");
+        this.continueBtn = page.locator("xpath=//span[contains(@class, 'relative')]");
+    }
 
-
+    async fillTinPage(){
+        expect(this.tinPageHeader).toBeVisible;
+        await this.primaryTin.pressSequentially("1111111111");
+        await this.continueBtn.click();
     }
 }

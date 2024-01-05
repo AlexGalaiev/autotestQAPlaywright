@@ -1,0 +1,122 @@
+{
+    "High_score": {
+        "terms-conditions": {
+            "type": "multipleAnswer",
+            "answers": [
+                {
+                    "answer": "default-checkbox"
+                },
+                {
+                    "answer": "shareDealingConsent"
+                },
+                {
+                    "answer": "shareDealingConsentAgreement"
+                }
+
+            ]
+        },
+        "employement": {
+            "type": "singleClick",
+            "answer": "es_retired"
+        },
+        "annual_income": {
+            "type": "singleClick",
+            "answer": "ai_450001_750000"
+        },
+        "amount_intend_to_invest": {
+            "type": "singleClick",
+            "answer": "at_300001_500000"
+        },    
+        "net_worth": {
+            "type": "singleClick",
+            "answer": "nw_450001_750000"
+        },
+        "yearly_income": {
+            "type": "singleClick",
+            "answer": "ndi_100001_350000"
+        },
+        "funds_source": {
+            "type": "singleClick",
+            "answer": "fs_gift"
+        },
+        "origin_of_funds": {
+            "type": "multipleAnswer",
+            "answers": [
+                {
+                    "answer": "origin_of_funds_wire_transfer_eu"
+                },
+                {
+                    "answer": "origin_of_funds_wire_transfer_non_eu"
+                },
+                {
+                    "answer": "origin_of_funds_credit_card_eu"
+                }
+            ]
+        },
+        "funds_source_options": {
+            "type": "text",
+            "classNameOrId": "funds_source_bank",
+            "text": "BANK"
+        },
+        "different_withdrawals": {
+            "type": "singleClickwith_derived",
+            "answer": "no"
+        },
+        "cfd_trade_experience": {
+            "type": "singleClick",
+            "answer": "cte_25_100"
+        },
+        "yearly_invested_amount": {
+            "type": "singleClick",
+            "answer": "yia_5000_25000"
+        },
+        "feature_trade_experience": {
+            "type": "singleClick",
+            "answer": "fte_25_100"
+        },
+        "shares_trade_experience": {
+            "type": "singleClick",
+            "answer": "ste_25_100"
+        },
+        "average_leverage": {
+            "type": "singleClick",
+            "answer": "avel_50_100"
+        },
+        "qualification_level": {
+            "type": "multipleAnswer",
+            "answers": [
+                {
+                    "answer": "ql_professional"
+                },
+                {
+                    "answer": "ql_worked"
+                }
+            ]
+        },
+        "where_can_you_sell_cfds": {
+            "type": "singleClick",
+            "answer": "q3_answer1"
+        },
+        "trading_purpose": {
+            "type": "singleClick",
+            "answer": "tp_speculative"
+        },       
+        "limit_loss_type_of_order": {
+            "type": "singleClick",
+            "answer": "ot_stop_loss"
+        },
+        "bull_market": {
+            "type": "singleClick",
+            "answer": "q1_answer1"
+        },
+        "loss_of_capital_reaction": {
+            "type": "multipleAnswer",
+            "answers": [
+                {
+                    "answer": "reaction_keep_trading"
+                }
+            ]
+        }
+    }
+}
+
