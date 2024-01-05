@@ -26,7 +26,11 @@ export class PersonalDetails {
         await this.firstName.pressSequentially('autotestName');
         await this.middleName.pressSequentially('autotestMiddleName');
         await this.lastName.pressSequentially('autotestLastName');
+<<<<<<< HEAD
         await this.dateOfBirth.dblclick();
+=======
+        await this.dateOfBirth.pressSequentially('04-06-1990')
+>>>>>>> 22c17d5 (4 commit)
         await this.maleCheckbox.click();
         await this.сontinueBtn.click();
     }
