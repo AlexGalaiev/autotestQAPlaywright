@@ -7,25 +7,20 @@ import { PersonalDetails } from "../pageObjects/fullRegistration/Registartion_Ma
 import { ResidenceAdress } from "../pageObjects/fullRegistration/Registartion_MainPage/residenceAdress";
 import { TinPage } from "../pageObjects/fullRegistration/Registartion_MainPage/tin";
 
-
+let KeyWeyCountry = "Poland";
 
 test.beforeEach( async ({page}) =>{
     let shortRegistration = new ShortRegistrationPage(page);
         await shortRegistration.goto();
         await shortRegistration.createCFDUser();
-        let successPopup = new SuccessAccountCreationPopup(page);
-        await successPopup.continueRegistration();
+        await new SuccessAccountCreationPopup(page).continueRegistration();
         let residencePage = new ResidenceAndCitizenship(page);
-        await residencePage.changeCountry("Poland");
+        await residencePage.changeCountry(KeyWeyCountry);
         await residencePage.fillResidenceAndCitizenshipSte();
-        let changeCompanyPopup = new ChangeCompanyPopup(page);
-        await changeCompanyPopup.proceedChangeCompanyPopup();
-        let personalDetails = new PersonalDetails(page);
-        await personalDetails.fillPersonalDetails();
-        let residenceAdrees = new ResidenceAdress(page);
-        await residenceAdrees.fillResidenceAdress();
-        let tinPage = new TinPage(page);
-        await tinPage.fillTinPage();
+        await new ChangeCompanyPopup(page).proceedChangeCompanyPopup();
+        await new PersonalDetails(page).fillPersonalDetails();
+        await new ResidenceAdress(page).fillResidenceAdress();
+        await new TinPage(page).fillTinPage();
 })
 
 test('Key Wey HIGH SCORE Full REgistration', async({ page }) => {
