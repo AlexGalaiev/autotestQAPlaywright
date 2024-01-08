@@ -1,21 +1,25 @@
 {
   "name": "autotestqaplaywright",
-  "version": "1.40",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "moment": "^2.30.1",
+    "playwright": "^1.40.1",
+    "playwright-core": "^1.40.1",
+    "typescript": "^5.3.3",
+    "undici-types": "^5.26.5"
+  },
   "scripts": {
-    "test": "autotestqaplaywright"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.4",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "moment": "^2.30.1",
-    "playwright": "^1.40.1"
+    "@playwright/test": "^1.40.1"
   }
 }
