@@ -16,6 +16,6 @@ export class TinPage {
     async fillTinPage(){
         expect(this.tinPageHeader).toBeVisible;
         await this.primaryTin.pressSequentially("1111111111");
-        await this.continueBtn.click();
+        await this.continueBtn.click({timeout:1000});
     }
 }

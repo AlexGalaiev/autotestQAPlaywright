@@ -1,14 +1,14 @@
 import { Page, Locator, expect } from "@playwright/test"
 
 export class PersonalDetails {
-    page: Page;
-    firstName: Locator;
-    middleName: Locator; 
-    lastName: Locator; 
-    dateOfBirth: Locator;
-    maleCheckbox: Locator;
-    сontinueBtn: Locator;
-    personalDetailsName: Locator;
+    readonly page: Page;
+    readonly firstName: Locator;
+    readonly middleName: Locator; 
+    readonly lastName: Locator; 
+    readonly dateOfBirth: Locator;
+    readonly maleCheckbox: Locator;
+    readonly сontinueBtn: Locator;
+    readonly personalDetailsName: Locator;
 
     constructor(page: Page){
         this.page = page;
@@ -21,11 +21,11 @@ export class PersonalDetails {
         this.personalDetailsName = page.locator("xpath=//h1");
     }
 
-    async fillPersonalDetails() {
-        expect(this.personalDetailsName).toBeVisible;
-        await this.firstName.pressSequentially('autotestName');
-        await this.middleName.pressSequentially('autotestMiddleName');
-        await this.lastName.pressSequentially('autotestLastName');
+    async fillPersonalDetails(userName) {
+        await this.page.waitForSelector("//h1");
+        await this.firstName.pressSequentially(userName);
+        await this.middleName.pressSequentially(userName);
+        await this.lastName.pressSequentially(userName);
         await this.dateOfBirth.dblclick();
         await this.maleCheckbox.click();
         await this.сontinueBtn.click();
