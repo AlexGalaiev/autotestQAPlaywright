@@ -1,9 +1,9 @@
 import { Page, Locator, expect } from '@playwright/test';
 
 export class ChangeCompanyPopup {
-    page: Page;
-    popupBody: Locator;
-    continueRegistration: Locator;
+    readonly page: Page;
+    readonly popupBody: Locator;
+    readonly continueRegistration: Locator;
 
 
     constructor(page: Page) {

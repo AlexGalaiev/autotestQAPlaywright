@@ -1,0 +1,64 @@
+{
+    "employment": {
+        "answer": "es_retired"
+    },
+    "annual_income": {
+        "answer": "ai_450001_750000"
+    },
+    "amount_intend_to_invest": {
+        "answer": "at_300001_500000"
+    },
+    "net_worth": {
+        "answer": "nw_450001_750000"
+    },
+    "yearly_income": {
+        "answer": "ndi_100001_350000"
+    },
+    "funds_source": {
+        "answer": "fs_gift"
+    },
+    "origin_of_funds": {
+        "answer": "origin_of_funds_wire_transfer_eu"
+    },
+    "funds_source_options": {
+        "type": "text",
+        "classNameOrId": "funds_source_bank",
+        "text": "BANK"
+    },
+    "different_withdrawals": {
+        "answer": "no"
+    },
+    "cfd_trade_experience": {
+        "answer": "cte_25_100"
+    },
+    "yearly_invested_amount": {
+        "answer": "yia_5000_25000"
+    },
+    "feature_trade_experience": {
+        "answer": "fte_25_100"
+    },
+    "shares_trade_experience": {
+        "answer": "ste_25_100"
+    },
+    "average_leverage": {
+        "answer": "avel_50_100"
+    },
+    "qualification_level": {
+        "answer": "ql_professional"
+    },
+    "where_can_you_sell_cfds": {
+        "answer": "q3_answer1"
+    },
+    "trading_purpose": {
+        "answer": "tp_speculative"
+    },
+    "limit_loss_type_of_order": {
+        "answer": "ot_stop_loss"
+    },
+    "bull_market": {
+        "answer": "q1_answer1"
+    },
+    "loss_of_capital_reaction": {
+        "answer": "reaction_keep_trading"
+    }
+}

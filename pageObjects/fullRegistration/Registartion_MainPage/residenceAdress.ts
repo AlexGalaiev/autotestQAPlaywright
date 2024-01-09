@@ -1,12 +1,12 @@
 import { Page, Locator, expect }  from "@playwright/test";
 
 export class ResidenceAdress {
-    page: Page;
-    city: Locator;
-    street: Locator;
-    zip: Locator;
-    continueBtn: Locator;
-    residenceAdressStepName: Locator;
+    readonly page: Page;
+    readonly city: Locator;
+    readonly street: Locator;
+    readonly zip: Locator;
+    readonly continueBtn: Locator;
+    readonly residenceAdressStepName: Locator;
 
     constructor(page: Page){
         this.page = page;
