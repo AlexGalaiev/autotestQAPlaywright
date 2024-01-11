@@ -13,12 +13,12 @@ export class ResidenceAdress {
         this.city = page.locator("css=#city");
         this.street = page.locator("css=#streetName");
         this.zip = page.locator("css=#zip");
-        this.continueBtn = page.locator("css=[type='submit']");
+        this.continueBtn = page.locator("xpath=//span[contains(@class, 'relative')]");
         this.residenceAdressStepName = page.locator("xpath=//h1");
     }
 
     async fillResidenceAdress(){
-        await this.page.waitForLoadState();
+        await this.page.waitForSelector("#city");
         await this.city.pressSequentially("Bengaluru");
         await this.street.pressSequentially("DV Gundappa Road ");
         await this.zip.pressSequentially("560004");

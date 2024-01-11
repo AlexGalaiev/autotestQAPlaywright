@@ -14,9 +14,10 @@ export class TinPage {
     }
 
     async fillTinPage(){
-        await this.page.waitForLoadState();
+        await this.page.waitForSelector("#primaryTin");
         await this.primaryTin.pressSequentially("1111111111");
-        await this.continueBtn.click({timeout:1000});
+        await this.page.waitForTimeout(1000);
+        await this.continueBtn.click();
     }
 
 }

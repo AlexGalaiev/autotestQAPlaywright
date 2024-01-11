@@ -1,4 +1,4 @@
-import {Page, Locator } from "@playwright/test";
+import {Page, Locator, expect } from "@playwright/test";
 
 export class TSCPage {
     readonly page: Page;
@@ -16,16 +16,11 @@ export class TSCPage {
     }
 
     async acceptAllTerms(){
-        await this.page.waitForLoadState();
-        await this.page.waitForTimeout(5000);
-        const clicked = await this.tscCheckbox.click();
+        await this.page.waitForSelector("//input[@id='default-checkbox']");
+        await this.page.waitForTimeout(3000);
+        await this.tscCheckbox.click();
         await this.shareDealingConsentAgreement.click();      
         await this.shareDealingConsent.click();
         await this.continueBtn.click();
-    }
-
-    async checkAndClickCheckbox(elementLocator){
-        await this.page.locator(elementLocator).click();
-        
     }
 }
