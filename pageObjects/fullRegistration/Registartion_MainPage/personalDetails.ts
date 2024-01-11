@@ -22,7 +22,7 @@ export class PersonalDetails {
     }
 
     async fillPersonalDetails(userName) {
-        await this.page.waitForSelector("//h1");
+        await this.page.waitForLoadState();
         await this.firstName.pressSequentially(userName);
         await this.middleName.pressSequentially(userName);
         await this.lastName.pressSequentially(userName);

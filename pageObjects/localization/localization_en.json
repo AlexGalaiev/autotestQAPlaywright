@@ -1,6 +1,5 @@
 {
-  "successPopupHeader" : "Account created!",
-  "successPopupText" : "Complete the process of registration to start trading",
-  "successPopupContinieBTN": "Continue",
-  "successPopupGoToPlatform": "Go to platform"
-} 
+  "changeCompanypopup": {
+    "answer": "By continuing your application with your selected country of residence, your account will be created with Key Way Investments Limited Regulated by CySEC under the License no. 292/16. Please review carefully the Terms and Conditions, available upon completing the registration, or on our websites Legal Documentation section."
+  }
+}

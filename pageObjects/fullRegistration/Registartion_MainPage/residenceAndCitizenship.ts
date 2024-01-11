@@ -27,7 +27,7 @@ export class ResidenceAndCitizenship {
       }
       
       async changeCountry(countryOfUser) {
-        expect(this.residenceAndCitizenshipName).toBeVisible;
+        await this.page.waitForLoadState();
         let countryDropDown = this.openCountryDropDown();
         await countryDropDown;
         await this.countryInputField.pressSequentially(countryOfUser);
