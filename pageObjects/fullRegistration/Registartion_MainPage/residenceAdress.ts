@@ -18,7 +18,7 @@ export class ResidenceAdress {
     }
 
     async fillResidenceAdress(){
-        expect(this.residenceAdressStepName).toBeVisible;
+        await this.page.waitForLoadState();
         await this.city.pressSequentially("Bengaluru");
         await this.street.pressSequentially("DV Gundappa Road ");
         await this.zip.pressSequentially("560004");

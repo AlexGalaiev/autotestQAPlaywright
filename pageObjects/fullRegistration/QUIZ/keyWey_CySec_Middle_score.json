@@ -3,16 +3,16 @@
         "answer": "es_retired"
     },
     "annual_income": {
-        "answer": "ai_450001_750000"
+        "answer": "ai_25001_50000"
     },
     "amount_intend_to_invest": {
-        "answer": "at_300001_500000"
+        "answer": "at_5001_50000"
     },
     "net_worth": {
-        "answer": "nw_450001_750000"
+        "answer": "nw_15001_50000"
     },
     "yearly_income": {
-        "answer": "ndi_100001_350000"
+        "answer": "ndi_1001_5000"
     },
     "funds_source": {
         "answer": "fs_gift"
@@ -27,22 +27,22 @@
         "answer": "no"
     },
     "cfd_trade_experience": {
-        "answer": "cte_25_100"
+        "answer": "cte_never"
     },
     "yearly_invested_amount": {
-        "answer": "yia_5000_25000"
+        "answer": "yia_never_invested"
     },
     "feature_trade_experience": {
-        "answer": "fte_25_100 "
+        "answer": "fte_up_25"
     },
     "shares_trade_experience": {
-        "answer": "ste_25_100"
+        "answer": "ste_up_25"
     },
     "average_leverage": {
-        "answer": "avel_50_100"
+        "answer": "avel_u_10"
     },
     "qualification_level": {
-        "answer": "ql_professional"
+        "answer": "ql_worked"
     },
     "where_can_you_sell_cfds": {
         "answer": "q3_answer1"
@@ -57,6 +57,6 @@
         "answer": "q1_answer1"
     },
     "loss_of_capital_reaction": {
-        "answer": "reaction_keep_trading"
+        "answer": "reaction_maybe_close_account"
     }
 }

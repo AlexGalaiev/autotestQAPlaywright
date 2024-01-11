@@ -1,18 +1,18 @@
 {
     "employment": {
-        "answer": "es_retired"
+        "answer": "es_unemployed"
     },
     "annual_income": {
-        "answer": "ai_450001_750000"
+        "answer": "ai_u_25000"
     },
     "amount_intend_to_invest": {
-        "answer": "at_300001_500000"
+        "answer": "at_250_5000"
     },
     "net_worth": {
-        "answer": "nw_450001_750000"
+        "answer": "nw_u_15000"
     },
     "yearly_income": {
-        "answer": "ndi_100001_350000"
+        "answer": "ndi_less_1000"
     },
     "funds_source": {
         "answer": "fs_gift"
@@ -27,36 +27,36 @@
         "answer": "no"
     },
     "cfd_trade_experience": {
-        "answer": "cte_25_100"
+        "answer": "cte_never"
     },
     "yearly_invested_amount": {
-        "answer": "yia_5000_25000"
+        "answer": "yia_never_invested"
     },
     "feature_trade_experience": {
-        "answer": "fte_25_100 "
+        "answer": "fte_never"
     },
     "shares_trade_experience": {
-        "answer": "ste_25_100"
+        "answer": "ste_never"
     },
     "average_leverage": {
-        "answer": "avel_50_100"
+        "answer": "avel_never"
     },
     "qualification_level": {
-        "answer": "ql_professional"
+        "answer": "ql_none"
     },
     "where_can_you_sell_cfds": {
-        "answer": "q3_answer1"
+        "answer": "q3_answer3"
     },
     "trading_purpose": {
-        "answer": "tp_speculative"
+        "answer": "tp_intend_to_invest"
     },
     "limit_loss_type_of_order": {
-        "answer": "ot_stop_loss"
+        "answer": "ot_hold_position"
     },
     "bull_market": {
-        "answer": "q1_answer1"
+        "answer": "q1_answer3"
     },
     "loss_of_capital_reaction": {
-        "answer": "reaction_keep_trading"
+        "answer": "reaction_would_not_trade"
     }
 }
