@@ -4,7 +4,6 @@ interface quizAnswwer {
     questionShortname: {
         answer : string
     };
-    
 }
 
 export class QuizAnswer {

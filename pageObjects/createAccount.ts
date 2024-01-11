@@ -1,4 +1,4 @@
-import { Locator, Page, expect } from "@playwright/test";
+import { Locator, Page, chromium, expect } from "@playwright/test";
 import { RandomUser } from "../pageObjects/components/userCredentials";
 
 
