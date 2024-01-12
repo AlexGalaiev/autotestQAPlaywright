@@ -1,4 +1,4 @@
-import {Page, Locator, except} from "@playwright/test"
+import {Page, Locator} from "@playwright/test"
 
 export class MiddleScorePopup{
     readonly page: Page;
@@ -14,11 +14,12 @@ export class MiddleScorePopup{
     }
 
     async getPopupText(){
-        return await this.middleScorePopupText.innerText();
+        return await this.middleScorePopupText.textContent();
     }
 
     async acceptMiddleScorePopup(){
         await this.middleScoreCheckbox.click();
+        await this.middleScoreBtn.click();
 
     }
 }

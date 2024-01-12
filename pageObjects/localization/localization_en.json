@@ -1,5 +1,14 @@
 {
   "changeCompanypopup": {
     "answer": "By continuing your application with your selected country of residence, your account will be created with Key Way Investments Limited Regulated by CySEC under the License no. 292/16. Please review carefully the Terms and Conditions, available upon completing the registration, or on our websites Legal Documentation section."
+  },
+  "changeCompanyPopup_KWMarkets": {
+    "answer": "By continuing your application with your selected country of residence, your account will be created with Key Way Investments Limited Regulated by CySEC under the License no. 292/16. Please review carefully the Terms and Conditions, available upon completing the registration, or on our websites Legal Documentation section."
+  },
+  "middleScorePopup":{
+    "answer": "Based on the information you have provided regarding your trading experience and knowledge, Forex and/or CFD trading may be too risky for you at this time and we advise you to get a better understanding of the financial markets and practice trading on a demo account before moving on to live trading. If you still wish to open a live trading account now, please acknowledge the following: I know that Forex and/or CFD trading may not be appropriate for me at this time and I understand the risk involved. Nevertheless, I want to proceed with my application."
+  },
+  "lowScorePopup":{
+    "answer": "Based on the information you have just provided to us regarding your knowledge and experience, we consider that trading in complex instruments with the attached risks, is not appropriate for you at this time and we do not consider that this product meets your trading/investing needs. We advise that you visit our Education Centre where you will find a series of useful tutorials to familiarize yourself with our platforms and trading in general. Please take full advantage of our Practice/Demo Account and spend a reasonable amount of time here to increase your competence levels. You could also study some of the countless articles found on reputable websites and from experienced traders sharing their market expertise. Once you have had the opportunity to develop your skills and confidence, please contact our Customer Support Team to assist you in reapplying for a Live Account. We look forward to hearing from you in the near future."
   }
 }

@@ -1,4 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
+import { GetLocalizationText } from '../../localization/getLocalizationKey';
 
 export class ChangeCompanyPopup {
     readonly page: Page;
@@ -19,7 +20,6 @@ export class ChangeCompanyPopup {
         await this.continueRegistration.click();
     }
     async getPopupText(){
-        return this.popupText.allInnerTexts();
+        return this.popupText.textContent();
     }
-
 }
