@@ -10,12 +10,18 @@ import { KeyWeyFullREgistration } from "../pageObjects/fullRegistration/KeyWey/k
 import { TSCPage } from "../pageObjects/fullRegistration/GeneralDataSteps/tsc";
 import { VerificationCenter } from "../pageObjects/verificationStep/verificationCenter";
 import { MainFinaltoPage } from "../pageObjects/components/finalto/mainPage";
+import { GetLocalizationText } from "../pageObjects/localization/getLocalizationKey";
+import { MiddleScorePopup } from "../pageObjects/components/popups/middleScorePopup";
+import { LowScorePopup } from "../pageObjects/components/popups/lowScorePopup";
 
 let KeyWeyCountry = "Poland";
 
 test.describe('Key Wey company full registration', () => {
+    const language = "Eng";
+
     test.beforeEach(async ({ page }, testInfo) => {
         testInfo.setTimeout(testInfo.timeout + 60000);
+        const localization = new GetLocalizationText(page);
         let shortRegistration = new ShortRegistrationPage(page);
         await shortRegistration.goto();
         await shortRegistration.createCFDUser();
@@ -23,7 +29,9 @@ test.describe('Key Wey company full registration', () => {
         let residencePage = new ResidenceAndCitizenship(page);
         await residencePage.changeCountry(KeyWeyCountry);
         await residencePage.fillResidenceAndCitizenshipSte();
-        await new ChangeCompanyPopup(page).proceedChangeCompanyPopup();
+        let changeCompanyPopup = new ChangeCompanyPopup(page);
+        await changeCompanyPopup.getPopupText() === await localization.getLocalizationText("changeCompanypopup", language);
+        await changeCompanyPopup.proceedChangeCompanyPopup();
         await new PersonalDetails(page).fillPersonalDetails("KeyWey");
         await new ResidenceAdress(page).fillResidenceAdress();
         await new TinPage(page).fillTinPage();
@@ -41,35 +49,22 @@ test.describe('Key Wey company full registration', () => {
         await new TSCPage(page).acceptAllTerms();
         const scoring = "Middle";
         new KeyWeyFullREgistration(page).fillQuiz(scoring);
+        let middleScorePopup = new MiddleScorePopup(page);
+        const localization = new GetLocalizationText(page);
+        await middleScorePopup.getPopupText() === await localization.getLocalizationText("middleScorePopup", language);
+        await middleScorePopup.acceptMiddleScorePopup();
         await new VerificationCenter(page).checkElementsOnVerificationScreen();
         await new MainFinaltoPage(page).checkQaFinaltoUrl(); 
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    test('KW LOW SCORE', async ({ page }) => {
+        await new TSCPage(page).acceptAllTerms();
+        const scoring = "Low";
+        new KeyWeyFullREgistration(page).fillQuiz(scoring);
+        let lowScorePopup = new LowScorePopup(page);
+        const localization = new GetLocalizationText(page);
+        await lowScorePopup.getPopupText() === await localization.getLocalizationText("lowScorePopup", language);
+        await lowScorePopup.acceptPopup();
+        await new MainFinaltoPage(page).clickLowScorepopup();
+    })
 })

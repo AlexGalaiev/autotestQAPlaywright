@@ -2,9 +2,9 @@ import { Page, Locator, expect } from "@playwright/test";
 import { RegistartionMethods } from "../QUIZ/registrationMethods";
 
 const scoreQuizes = {
-    High: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_HighScore.json",
-    Middle: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_Middle_score.json",
-    Low: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_LowScore.json"
+    High_Cysec: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_HighScore.json",
+    Middle_Cysec: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_Middle_score.json",
+    Low_Cysec: "pageObjects\\fullRegistration\\QUIZ\\keyWey_CySec_LowScore.json"
 }
 
 export class KeyWeyFullREgistration {
