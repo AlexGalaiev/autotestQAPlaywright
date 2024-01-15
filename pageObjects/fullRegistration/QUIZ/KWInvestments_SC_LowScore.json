@@ -1,0 +1,59 @@
+{
+    "employment": {
+        "answer": "es_unemployed"
+    },
+    "annual_income": {
+        "answer": "ai_u_25000"
+    },
+    "yearly_income": {
+        "answer": "ndi_250_5000"
+    },
+    "net_wealth": {
+        "answer": "nw_15001_50000"
+    },
+    "intend_invest": {
+        "answer": "at_5001_50000"
+    },
+    "funds_source": {
+        "answer": "fs_gift"
+    },
+    "origin_of_funds": {
+        "answer": "origin_of_funds_wire_transfer_eu"
+    },
+    "fund_source_details": {
+        "answer": "#funds_source_bank"
+    },
+    "different_withdrawals": {
+        "answer": "no"
+    },
+    "education_level": {
+        "answer": "ed_no_edu"
+    },
+    "study_field": {
+        "answer": "sf_acc_bank"
+    },
+    "qualification_level": {
+        "answer": "ql_none"
+    },
+    "cfd_fx_experience": {
+        "answer": "fe_none"
+    },
+    "average_leverage": {
+        "answer": "avel_never"
+    },
+    "trade_kind": {
+        "answer": "tk_with_advice"
+    },
+    "order_type": {
+        "answer": "ot_hold_position"
+    },
+    "bull_market": {
+        "answer": "q1_answer3"
+    },
+    "buy_sell": {
+        "answer": "q3_answer3"
+    },
+    "trading_purpose": {
+        "answer": "tp_intend_to_invest"
+    }
+}

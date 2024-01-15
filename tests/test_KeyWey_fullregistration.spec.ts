@@ -39,7 +39,7 @@ test.describe('Key Wey company full registration', () => {
 
     test('KW HIGH SCORE', async ({ page }) => {
         await new TSCPage(page).acceptAllTerms();
-        const scoring = "High";
+        const scoring = "High_Cysec";
         new KeyWeyFullREgistration(page).fillQuiz(scoring);
         await new VerificationCenter(page).checkElementsOnVerificationScreen();
         await new MainFinaltoPage(page).checkQaFinaltoUrl(); 
@@ -47,7 +47,7 @@ test.describe('Key Wey company full registration', () => {
 
     test('KW MiDDLE SCORE', async ({ page }) => {
         await new TSCPage(page).acceptAllTerms();
-        const scoring = "Middle";
+        const scoring = "Middle_Cysec";
         new KeyWeyFullREgistration(page).fillQuiz(scoring);
         let middleScorePopup = new MiddleScorePopup(page);
         const localization = new GetLocalizationText(page);
@@ -59,7 +59,7 @@ test.describe('Key Wey company full registration', () => {
 
     test('KW LOW SCORE', async ({ page }) => {
         await new TSCPage(page).acceptAllTerms();
-        const scoring = "Low";
+        const scoring = "Low_Cysec";
         new KeyWeyFullREgistration(page).fillQuiz(scoring);
         let lowScorePopup = new LowScorePopup(page);
         const localization = new GetLocalizationText(page);

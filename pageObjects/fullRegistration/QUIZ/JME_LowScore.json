@@ -1,0 +1,50 @@
+{
+    "education_level": {
+        "answer": "ed_no_edu"
+    },
+    "qualification_level": {
+        "answer": "ql_none"
+    },
+    "employment": {
+        "answer": "es_unemployed"
+    },
+    "annual_income": {
+        "answer": "ai_u_25000"
+    },
+    "net_wealth": {
+        "answer": "nw_u_25000"
+    },
+    "intend_invest": {
+        "answer": "at_u_1000"
+    },
+    "funds_source": {
+        "answer": "fs_gift"
+    },
+    "fx_volume_experience": {
+        "answer": "fve_none"
+    },
+    "csb_volume_experience": {
+        "answer": "cve_none"
+    },
+    "fx_experience": {
+        "answer": "fe_none"
+    },
+    "csb_experience": {
+        "answer": "ce_none"
+    },
+    "trade_kind": {
+        "answer": "tk_none"
+    },
+    "bull_market": {
+        "answer": "q1_answer3"
+    },
+    "buy_sell": {
+        "answer": "q2_answer3"
+    },
+    "trading_with_leverage": {
+        "answer": "q4_answer3"
+    },
+    "investment_objectives": {
+        "answer": "question-answer-answer4"
+    }
+}
