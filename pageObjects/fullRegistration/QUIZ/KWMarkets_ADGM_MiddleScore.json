@@ -1,0 +1,62 @@
+{
+    "education_level": {
+        "answer": "ed_no_edu"
+    },
+    "qualification_level": {
+        "answer": "ql_none"
+    },
+    "employment": {
+        "answer": "es_unemployed"
+    },
+    "annual_income": {
+        "answer": "ai_u_25000"
+    },
+    "net_wealth": {
+        "answer": "nw_u_25000"
+    },
+    "intend_invest": {
+        "answer": "at_1001_5000"
+    },
+    "funds_source": {
+        "answer": "fs_gift"
+    },
+    "origin_of_funds": {
+        "answer": "of_e_wallet"
+    },
+    "funds_source_details": {
+        "answer": "bank"
+    },
+    "different_withdrawals": {
+        "answer": "no"
+    },
+    "fx_volume_experience": {
+        "answer": "fve_501_2500"
+    },
+    "csb_volume_experience": {
+        "answer": "cve_2501_10000"
+    },
+    "fx_experience": {
+        "answer": "fe_26_100"
+    },
+    "csb_experience": {
+        "answer": "ce_26_100"
+    },
+    "average_leverage": {
+        "answer": "avel_25_50"
+    },
+    "bull_market": {
+        "answer": "q1_answer1"
+    },
+    "position": {
+        "answer": "q2_answer2"
+    },
+    "trading_with_leverage": {
+        "answer": "q4_answer2"
+    },
+    "loss_of_capital_reaction": {
+        "answer": "question-answer-answer1"
+    },
+    "investment_objectives": {
+        "answer": "question-answer-answer4"
+    }
+}
